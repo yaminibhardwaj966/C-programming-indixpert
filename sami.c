@@ -1,55 +1,31 @@
 #include <stdio.h>
 int main()
 {
-    int num;
-    printf("please enter 1 to 10 number");
+    int number[10]={1,2,3,4,5,6,7,8,9,10};
+    int num, found=1;
+    printf("please enter 1 to 10 number: ");
     scanf("%d", &num);
-    if (num >= 1 && num <= 10)
-    {
-        if (num == 1)
-        {
-            printf("this number is less than 5");
-        }
-        else if (num == 2)
-        {
-            printf("this number is less than 5");
-        }
-        else if (num == 3)
-        {
-            printf("this number is less than 5");
-        }
-        else if (num == 4)
-        {
-            printf("this number is less than 5");
-        }
-        else if (num == 5)
-        {
-            printf("this number is equal than 5");
-        }
-        else if (num == 6)
-        {
-            printf("this number is greater than 5");
-        }
-        else if (num == 7)
-        {
-            printf("this number is greater than 5");
-        }
-        else if (num == 8)
-        {
-            printf("this number is greater than 5");
-        }
-        else if (num == 9)
-        {
-            printf("this number is greater than 5");
-        }
-        else if (num == 10)
-        {
-            printf("this number is greater than 5");
+    for(int i= 0;i<=10;i++){
+        if(number[i]==num){
+            found=1;
+            break;
         }
     }
-    else
+   if(!found){
+    printf("kripya 1 se 10 ke beech ka number dijiye.\n");
+   }else 
+   {
+    if(num<5){
+        printf("%d-- ye 5 se chota hai.\n",num);
+    }else if (num>5)
     {
-        printf("invalid");
+        printf("%d--ye 5 se bada hai.\n",num);
+    }else{
+        printf("%d--ye 5 kr barabar hai.\n",num);
     }
+    
+   }
+   
+       
     return 0;
 }
