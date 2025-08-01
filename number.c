@@ -10,7 +10,8 @@ int main() {
         printf("%d ", i);
 
     
-        if (i < 5) {
+        if (i < 5) 
+        {
             lessThan5++;
         } else if (i > 5) {
             greaterThan5++;
